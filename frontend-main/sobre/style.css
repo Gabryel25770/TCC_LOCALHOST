@@ -10,20 +10,6 @@
     --color-button-close-hover: #6e6e6e;
 }
 
-/* Estilos para o botão */
-.back-button {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
 .popup-background {
     display: none;
     position: fixed;
@@ -244,7 +230,7 @@ button {
 }
 
 #mainImage{
-    height: 100% !important;
+    height: 100%;
     margin-left: 100px
 }
 

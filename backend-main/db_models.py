@@ -1,6 +1,8 @@
+from datetime import datetime
 from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import declarative_base, sessionmaker
+from sqlalchemy.types import DateTime
+
 
 # --- Conexão com SQLite ---
 DATABASE_URL = "sqlite:///textos.db"
@@ -15,6 +17,7 @@ class Registro(Base):
     id = Column(Integer, primary_key=True, index=True)
     texto = Column(String, nullable=False)
     sentimento = Column(String, nullable=False)
+    data_criacao = Column(DateTime, default=datetime.utcnow)
 
 
 Base.metadata.create_all(bind=engine)

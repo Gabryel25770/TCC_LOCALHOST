@@ -5,7 +5,7 @@ def listar_registros():
     resultados = db.query(Registro).all()
 
     for item in resultados:
-        print(f"ID: {item.id} | Texto: {item.texto} | Sentimento: {item.sentimento}")
+        print(f"ID: {item.id} | Texto: {item.texto} | Sentimento: {item.sentimento} | Data: {item.data_criacao}")
 
     db.close()
 

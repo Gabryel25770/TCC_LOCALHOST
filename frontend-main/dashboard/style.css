@@ -1,0 +1,42 @@
+:root {
+    --color-primary: #b324b8;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+    --color-button-close: #979797;
+    --color-button-close-hover: #6e6e6e;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 300px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}

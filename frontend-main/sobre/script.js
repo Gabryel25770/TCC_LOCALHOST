@@ -184,10 +184,6 @@ function clickNtl(){
     sentimentoResposta = 'neutro'
 }
 
-function navigateTo(page) {
-    window.location.href = page;
-}
-
 async function analise(){
     let campoTexto = document.getElementById("campotext");
     let texto = campoTexto.value;
