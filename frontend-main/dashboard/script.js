@@ -1,3 +1,7 @@
+function navigateTo(page) {
+    window.location.href = page;
+}
+
 async function carregarDashboard() {
     try {
         // Rota que vai fornecer os dados:
